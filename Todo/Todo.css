@@ -38,3 +38,33 @@ body{
 #todoinput::placeholder{
     color: #bbb;
 }
+
+ul>li{
+    background-color: #eee;
+    color:#333;
+    height:40px;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding:10px;
+    position: relative;
+}
+li>.fa-check,.fa-trash{
+    position: absolute;
+    cursor: pointer;
+}
+
+li>.fa-check{
+    right:40px;
+    color:green; 
+}
+
+li>.fa-trash{
+    right:15px;
+    color:red; 
+}
+
+ul>.checked{
+    text-decoration: line-through;
+    background: lightgreen;
+    transition: .2s;
+}
